@@ -1,7 +1,7 @@
 package main
 
 import (
-	auth "github.com/hunterlong/authorizecim"
+	auth "github.com/mitchrodrigues/authorizecim"
 	"os"
 	"fmt"
 )
