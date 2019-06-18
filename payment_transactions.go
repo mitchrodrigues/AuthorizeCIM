@@ -259,6 +259,10 @@ type UserField struct {
 	Name  string `json:"name,omitempty"`
 	Value string `json:"value,omitempty"`
 }
+type Order struct {
+	InvoiceNumber string `json:"invoiceNumber,omitempty"`
+	Description   string `json:"description,omitempty"`
+}
 
 type TransactionRequest struct {
 	TransactionType string     `json:"transactionType,omitempty"`
@@ -276,6 +280,8 @@ type TransactionRequest struct {
 	BillTo     *BillTo  `json:"billTo,omitempty"`
 	ShipTo     *Address `json:"shipTo,omitempty"`
 	CustomerIP string   `json:"customerIP,omitempty"`
+
+	Order *Order `json:"order,omitempty"`
 	//TransactionSettings TransactionSettings `json:"transactionSettings,omitempty"`
 	//UserFields          UserFields          `json:"userFields,omitempty"`
 }
